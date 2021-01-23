@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+body, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: repeating-linear-gradient(45deg, rgba(97, 97, 97, 0.1) 0px, rgba(97, 97, 97, 0.1) 2px, transparent 2px, transparent 4px), linear-gradient(90deg, #2b2b2b, #2b2b2b);
+}
+
+header {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(1rem);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: bold;
+  color: #F9C70C;
+  font-family: "Fjalla One", sans-serif;
+}
+
+hr {
+  padding: 5px;
+  border: none;
+  background-color: #F9C70C;
+  border-color: #F9C70C;
+  color: #F9C70C;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+li {
+  margin: 10px;
+  list-style: none;
+}
+li img {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  background: red;
+  transition: 0.5s;
+  z-index: 1;
+}
+li .details {
+  margin: 0px;
+  padding: 0px;
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(1rem);
+}
+li:hover img {
+  height: 0px;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.details li {
+  line-height: 1;
+}
+
+.song-title {
+  color: #F9C70C;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.genre {
+  background-color: #F1C27D;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+  ul {
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 500px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
