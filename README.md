@@ -23,7 +23,6 @@ Pull requests are welcome. You can help in making the code more efficient and sh
 ## Roadmap
 - [x] Display all songs
 - [x] Design for smaller screens
-- [ ] Implement it in a django website
 - [ ] Implement the website using VUE
 - [ ] Make the top 100 searchable
 
